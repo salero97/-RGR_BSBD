@@ -1,8 +1,6 @@
 -- блок 1. расширения
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
-
--- pgaudit уже установлен в лабораторной работе 1, при необходимости раскомментировать
--- CREATE EXTENSION IF NOT EXISTS pgaudit;
+CREATE EXTENSION IF NOT EXISTS pgaudit;
 
 -- блок 2. полная очистка объектов предыдущего развертывания
 DROP EVENT TRIGGER IF EXISTS login_audit_trigger;
